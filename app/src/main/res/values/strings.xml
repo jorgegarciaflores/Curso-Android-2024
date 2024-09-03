@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Curso Android</string>
+    <string name="label_login">Identificación de Usuarios</string>
 </resources>
