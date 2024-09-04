@@ -5,6 +5,7 @@
         <string name="label_login">Identificación de Usuarios</string>
         <string name="label_username">Username</string>
         <string name="label_password">Password</string>
+        <string name="label_remeber_username">Recordar usuario</string>
         <string name="action_validate">Validar</string>
         <string name="message_login_ok">Todo OK!</string>
         <string name="message_login_fail">Las credenciales no son correctas</string>
