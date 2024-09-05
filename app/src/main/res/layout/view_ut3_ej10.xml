@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@id/img1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Colabora"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_big"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/img1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv1"
+        tools:src="@tools:sample/avatars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_spacing"
+        android:layout_marginHorizontal="@dimen/small_spacing"
+        />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/img1"
+        app:layout_constraintTop_toTopOf="@id/img1"
+        android:text="Hazte Socio"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_medium"
+        android:layout_marginStart="@dimen/small_spacing"
+        />
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_spacing"
+        app:layout_constraintStart_toStartOf="@id/tv2"
+        app:layout_constraintStart_toEndOf="@id/img1"
+        app:layout_constraintTop_toBottomOf="@id/tv2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Apadrina a un animal de compañia"
+        android:textSize="@dimen/size_small"
+        />
+
+
+    <ImageView
+        android:id="@+id/img2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img1"
+        tools:src="@tools:sample/avatars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_spacing"
+        android:layout_marginHorizontal="@dimen/small_spacing"
+        />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/img2"
+        app:layout_constraintTop_toTopOf="@id/img2"
+        android:text="Hazte Socio"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_medium"
+        android:layout_marginStart="@dimen/small_spacing"
+        />
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_spacing"
+        app:layout_constraintStart_toStartOf="@id/tv4"
+        app:layout_constraintStart_toEndOf="@id/img2"
+        app:layout_constraintTop_toBottomOf="@id/tv4"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Apadrina a un animal de compañia"
+        android:textSize="@dimen/size_small"
+        />
+
+    <ImageView
+        android:id="@+id/img3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img2"
+        tools:src="@tools:sample/avatars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_spacing"
+        android:layout_marginHorizontal="@dimen/small_spacing"
+        />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/img3"
+        app:layout_constraintTop_toTopOf="@id/img3"
+        android:text="Hazte Socio"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_medium"
+        android:layout_marginStart="@dimen/small_spacing"
+        />
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_spacing"
+        app:layout_constraintStart_toStartOf="@id/tv6"
+        app:layout_constraintStart_toEndOf="@id/img3"
+        app:layout_constraintTop_toBottomOf="@id/tv6"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Apadrina a un animal de compañia"
+        android:textSize="@dimen/size_small"
+        />
+
+    <ImageView
+        android:id="@+id/img4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img3"
+        tools:src="@tools:sample/avatars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_spacing"
+        android:layout_marginHorizontal="@dimen/small_spacing"
+        />
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/img4"
+        app:layout_constraintTop_toTopOf="@id/img4"
+        android:text="Hazte Socio"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_medium"
+        android:layout_marginStart="@dimen/small_spacing"
+        />
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_spacing"
+        app:layout_constraintStart_toStartOf="@id/tv8"
+        app:layout_constraintStart_toEndOf="@id/img4"
+        app:layout_constraintTop_toBottomOf="@id/tv8"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Apadrina a un animal de compañia"
+        android:textSize="@dimen/size_small"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
