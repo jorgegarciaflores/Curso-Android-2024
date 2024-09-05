@@ -1,16 +1,10 @@
 package com.example.cursoandroid.features.login.presentation
 
-import android.content.DialogInterface
-import android.content.DialogInterface.OnClickListener
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.cursoandroid.R
 import com.example.cursoandroid.features.login.LoginFactory
 import com.google.android.material.snackbar.Snackbar
@@ -28,7 +22,6 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         setupView()
     }
-
 
     private fun setupView() {
         val actionValidate = findViewById<Button>(R.id.action_validate)
@@ -50,5 +43,15 @@ class LoginActivity : AppCompatActivity() {
             println("Pulsado boton")
 
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        val username = loginViewModel.onResume()
+        if(username!=null) {
+            findViewById<EditText>(R.id.input_username).setText(username)
+            findViewById<CheckBox>(R.id.check_remenber).isChecked=true
+        }
+
     }
 }

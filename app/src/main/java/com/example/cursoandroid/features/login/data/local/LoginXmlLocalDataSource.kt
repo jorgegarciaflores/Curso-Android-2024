@@ -4,25 +4,31 @@ import android.content.Context
 
 class LoginXmlLocalDataSource (context: Context?) {
     private val sharedPref = context?.getSharedPreferences("username", Context.MODE_PRIVATE)
+    private val keyUsername : String = "username"
 
     fun saveUsername (username: String){
         with (sharedPref!!.edit()) {
-            putString("username", username)
+            putString(keyUsername, username)
             commit()
             }
     }
 
     fun deleteUsername (){
         with (sharedPref!!.edit()) {
-            remove("username")
+            remove(keyUsername)
             commit()
         }
 
         /*
         sharedPref.edit.apply{
-            remove("username")
+            remove(keyUsername)
             commit()
         }
          */
+    }
+
+
+    fun getUsername(): String? {
+            return sharedPref!!.getString(keyUsername, null)
     }
 }
