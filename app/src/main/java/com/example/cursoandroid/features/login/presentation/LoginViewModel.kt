@@ -25,11 +25,15 @@ class LoginViewModel(private val signInUseCase: SignInUseCase,
         return getUsernameUseCase.invoke()
         //return getUsernameUseCase.invoke()
         /*
-        val username : String = getUsernameUseCase.invoke().toString()
+        val username : String = getUsernameUseCase.invoke()
         // Como tratar los nulos: ?
         username?.let {
             it //it = username no nulo
         }
+        Otra:
+        val username : String? = getUsernameUseCase.invoke()
+        return username
+
         */
     }
 }
