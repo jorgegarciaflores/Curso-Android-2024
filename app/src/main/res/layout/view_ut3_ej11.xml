@@ -1,30 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     >
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
+        android:layout_marginHorizontal="@dimen/small_spacing"
+        android:layout_marginVertical="@dimen/small_spacing">
 
         <ImageView
             android:id="@+id/img1"
-            tools:src="@tools:sample/avatars"
+            app:layout_constraintHeight_max="228dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             android:layout_marginHorizontal="@dimen/small_spacing"
-            android:layout_marginVertical="@dimen/medium_spacing"
+            android:layout_marginVertical="@dimen/small_spacing"
+            android:src="@drawable/perro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/perro"
+            android:paddingBottom="@dimen/small_spacing"
             />
 
         <TextView
             android:id="@+id/tv1"
-            android:layout_width="match_parent"
+            android:layout_width="0sp"
             android:layout_height="wrap_content"
             android:textAlignment="viewStart"
             app:layout_constraintStart_toStartOf="parent"
@@ -34,30 +39,20 @@
             android:textStyle="bold"
             android:textSize="@dimen/size_big"
             android:layout_marginStart="@dimen/medium_spacing"
+            android:paddingBottom="@dimen/small_spacing"
             />
         <TextView
             android:id="@+id/tv2"
-            android:layout_width="match_parent"
+            android:layout_width="0sp"
             android:layout_height="wrap_content"
             android:textAlignment="viewStart"
-            app:layout_constraintStart_toEndOf="@id/tv2"
+            app:layout_constraintStart_toStartOf="@id/tv1"
             app:layout_constraintTop_toBottomOf="@id/tv1"
             android:text="Un diamante sin pulir"
             android:textColor="@color/black"
             android:textSize="@dimen/size_medium"
             android:layout_marginStart="@dimen/medium_spacing"
             />
-
-
-
-            <ImageView
-                tools:src="@tools:sample/avatars"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv2"
-                />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -8,4 +8,6 @@
     <!-- Spaces (Múltiples de 8) -->
     <dimen name="small_spacing">8dp</dimen>
     <dimen name="medium_spacing">16dp</dimen>
+
+
 </resources>
